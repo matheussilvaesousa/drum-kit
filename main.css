@@ -44,6 +44,7 @@ main {
   display: flex;
   flex-direction: column;
   height: 100px;
+  transition: background-color 0.1s;
   width: 90px;
 }
 

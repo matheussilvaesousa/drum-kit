@@ -18,9 +18,11 @@ function endAction(e) {
   const key = button.querySelector("kbd");
   const instrument = button.querySelector("span");
   if (!button) return;
-  button.classList.remove("playing-bg");
-  key.classList.remove("playing-key");
-  instrument.classList.remove("playing-instrument");
+  setTimeout(function () {
+    button.classList.remove("playing-bg");
+    key.classList.remove("playing-key");
+    instrument.classList.remove("playing-instrument");
+  }, 100);
 }
 
 window.addEventListener("keydown", (e) => {
