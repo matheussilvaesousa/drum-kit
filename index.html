@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="main.css" />
+    <title>Browser Drum Kit</title>
+  </head>
+  <body>
+    <main>
+      <div id="main-bg">
+        <div id="buttons">
+          <div class="button" data-key="67" id="boom">
+            <kbd>C</kbd>
+            <span class="instr">Boom</span>
+          </div>
+          <div class="button" data-key="74" id="hihat">
+            <kbd>J</kbd>
+            <span class="instr">Hi-hat</span>
+          </div>
+          <div class="button" data-key="86" id="kick">
+            <kbd>V</kbd>
+            <span class="instr">Kick</span>
+          </div>
+          <div class="button" data-key="75" id="openhat">
+            <kbd>K</kbd>
+            <span class="instr">Open Hat</span>
+          </div>
+          <div class="button" data-key="76" id="ride">
+            <kbd>L</kbd>
+            <span class="instr">Ride</span>
+          </div>
+          <div class="button" data-key="70" id="snare">
+            <kbd>F</kbd>
+            <span class="instr">Snare</span>
+          </div>
+          <div class="button" data-key="68" id="tom">
+            <kbd>D</kbd>
+            <span class="instr">Tom</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <audio data-key="67" src="assets/sounds/boom.wav"></audio>
+    <audio data-key="74" src="assets/sounds/hihat.wav"></audio>
+    <audio data-key="86" src="assets/sounds/kick.wav"></audio>
+    <audio data-key="75" src="assets/sounds/openhat.wav"></audio>
+    <audio data-key="76" src="assets/sounds/ride.wav"></audio>
+    <audio data-key="70" src="assets/sounds/snare.wav"></audio>
+    <audio data-key="68" src="assets/sounds/tom.wav"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
